@@ -1,0 +1,80 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+
+  /* Estilos del contenedor del switch */
+  .switch-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  /* El switch */
+  .switch {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  /* El círculo dentro del switch */
+  .switch::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+
+  /* Modo oscuro: mueve el círculo a la derecha */
+  .dark-mode .switch::before {
+    transform: translateX(30px);
+  }
+
+  /* Iconos de sol y luna */
+  .icon {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+
+  .icon-left {
+    margin-right: 10px;
+  }
+
+  .icon-right {
+    margin-left: 10px;
+  }
+
+  /* Estilos de las secciones */
+  .section {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  /* Modo claro para las secciones */
+  .light-mode-section {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+
+  /* Modo oscuro para las secciones */
+  .dark-mode-section {
+    background-color: #333;
+    color: #f0f0f0;
+  }
