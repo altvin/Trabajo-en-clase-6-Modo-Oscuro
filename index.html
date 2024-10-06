@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modo Oscuro con Switch y Secciones</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Modo Oscuro con Switch y Secciones Cambiantes</h1>
+  <p>Haz clic en el interruptor para cambiar entre modo claro y oscuro. Las secciones también cambiarán de estilo.</p>
+
+  <!-- Contenedor del switch con iconos -->
+  <div class="switch-container">
+    <span class="icon icon-left">☀️</span>
+    <div id="toggleSwitch" class="switch"></div>
+    <span class="icon icon-right">🌙</span>
+  </div>
+
+  <!-- Secciones con contenido -->
+  <div id="section1" class="section light-mode-section">
+    <h2>Sección 1</h2>
+    <p>Este es el contenido de la primera sección. El estilo cambiará según el modo claro u oscuro.</p>
+  </div>
+
+  <div id="section2" class="section light-mode-section">
+    <h2>Sección 2</h2>
+    <p>Este es el contenido de la segunda sección. El estilo cambiará junto con el modo del sitio.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
